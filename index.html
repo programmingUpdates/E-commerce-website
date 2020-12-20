@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="icon" href="Images/shopping-cart_icon-icons.com_60593.png">
+<link rel="stylesheet" href="CSS/support.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imall</title>
+
+
+    <style>
+     body
+     { 
+        margin: 0%;
+        background-color: #d6d6d6;
+        overflow-x: hidden;
+     }
+       
+     input[type=text] {
+  width: 40%;
+  padding: 12px 20px;
+/*  margin: 3vw; */
+  margin-left: 210px;
+  margin-top:1vw;
+  box-sizing: border-box;
+  border: solid 2px white;
+  border-radius: 15px;
+ -moz-border-radius: 15px;
+  outline: none;
+}
+
+        .navigation
+        {
+            width: 100vw;
+            height: 7vw;
+            background-color:dodgerblue;
+            
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            z-index: 3;
+            top: 0;
+        }
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap');
+
+:root{
+    --main-bg-color:brown;
+    --font1:'Baloo Bhaina 2', cursive;
+    --font2:'Roboto',sans-serif;
+}
+        .name
+        {
+            font-family: var(--font1);
+            font-weight:bolder;
+            color:white;
+        }
+
+
+        .submit {
+    background-color:white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color:royalblue;
+    border: none;
+    outline: none;
+    margin-left:5vw;
+    font-family: var(--font1);
+    font-size:small;
+    font-weight:bolder;
+}
+.submit:hover {
+    background-color:rgb(226, 248, 30);
+}
+.categories
+{
+    background-color:white;
+    width: 100vw;
+    height:4vw;
+    font-family: var(--font1);
+    font-weight:bolder;
+}
+
+.margS
+{
+    margin: 4vw;
+}
+
+#slider
+{
+    height:280px;
+    width: 100%;
+    /*
+    left: 50%;
+    min-width:1600px;
+    position:absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    */
+}
+
+.lscontainer
+{
+    margin-top: 10px;
+    background-color:white;
+}
+.lscontainer img
+{
+    height: 200px;
+    width: 250px;
+}
+
+figure
+{
+    z-index: 2;
+}
+
+figcaption
+{
+    font-size: 25px;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+
+   <img src="Images/shopping-cart_icon-icons.com_60593.png"  height="50px" width="50px">
+    <span class="name">imall</span>
+   
+    <input type="text" placeholder="search for products,Brands and more">
+    <input type="button" value="Login" class="submit" onclick="login()">
+    <img src="Images/10-2-cart-png-pic.png" alt="cart" style="margin-left: 17vw; padding-top:10px;" height="50px" width="50px">
+    <span class="name">cart</span>        
+</nav>
+
+<div class="categories">
+<center style="padding:10px;">
+<span class="margS">Mobile</span> <span class="margS">Electronics</span> <span class="margS">Mens</span> <span class="margS">womens</span>
+<span class="margS">Sports</span><span class="margS">Furniture</span>
+</center>
+</div>
+
+<div style="margin-top: 1vw;">
+    <img id="slider" src="Images/Banner.jpg" />
+  <!--
+    <button onclick="prev()" style="margin-left: 0%;" class="submit"> Prev </button>
+    <button onclick="next()" style="float: right;" class="submit"> Next </button>
+  -->
+</div>
+
+<div class="lscontainer">
+<figure class="imghvr-push-left" style="margin-right:55px;margin-left: 65px;">
+    <img src="Images/DolbyAudio.jpeg">
+    <figcaption>
+    Dolbyy Audio speakers<br>
+    available at 30% discount
+    </figcaption>
+    <a href="https://www.flipkart.com/search?q=dolby+atmos+soundbar&sid=0pm%2C0o7&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_6_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_6_na_na_na&as-pos=1&as-type=RECENT&suggestionId=dolby+atmos+soundbar%7CSpeakers&requestId=a8b46f75-fc61-45fc-ade7-ced6a0dd3e2a&as-searchtext=dolby%20"></a>
+</figure>
+
+<figure class="imghvr-push-left" style="margin-right:55px;">
+    <img src="Images/wallClocks.jpeg">
+    <figcaption>
+    Wall clocks<br>
+    available at 75% discount
+    </figcaption>
+    <a href="#"></a>
+</figure>
+
+
+<figure class="imghvr-push-left" style="margin-right:55px;">
+    <img src="Images/keychain.jpeg">
+    <figcaption>
+    keychain<br>
+    available at 45% discount
+    </figcaption>
+    <a href="#"></a>
+</figure>
+
+
+<figure class="imghvr-push-left" style="margin-right:55px;">
+    <img src="Images/shoes.jpeg">
+    <figcaption>
+    shoes<br>
+    available at 45% discount
+    </figcaption>
+    <a href="#"></a>
+</figure>
+
+
+</div>
+
+
+<div class="lscontainer">
+    <figure class="imghvr-push-left" style="margin-right:55px;margin-left: 65px;">
+        <img src="Images/monitor2.jpeg">
+        <figcaption>
+        Monitors<br>
+        available at 20% discount
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+    
+    <figure class="imghvr-push-left" style="margin-right:55px;">
+        <img src="Images/washing machine.jpeg">
+        <figcaption>
+        Washing machine<br>
+        available at 55% discount
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+    
+    
+    <figure class="imghvr-push-left" style="margin-right:55px;">
+        <img src="Images/x box.jpeg">
+        <figcaption>
+        X Box <br>
+        exclusively available on imall
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+    
+    
+    <figure class="imghvr-push-left" style="margin-right:55px;">
+        <img src="Images/book.jpeg">
+        <figcaption>
+        Books and Novels<br>
+        available at 55% discount
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+    
+    
+    </div>
+
+    
+<div class="lscontainer">
+    <figure class="imghvr-push-left" style="margin-right:55px;margin-left: 65px;">
+        <img src="Images/Tab.jpeg">
+        <figcaption>
+        samsung Galaxy Tabs<br>
+        starting from 9000
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+    
+    <figure class="imghvr-push-left" style="margin-right:55px;">
+        <img src="Images/mixer.jpeg">
+        <figcaption>
+        Mixers and juicers<br>
+        available at 55% discount
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+    
+    
+    <figure class="imghvr-push-left" style="margin-right:55px;">
+        <img src="Images/vaccum.jpeg">
+        <figcaption>
+        Robotic vaccum cleaner <br>
+        exclusively available on imall
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+    
+    
+    <figure class="imghvr-push-left" style="margin-right:55px;">
+        <img src="Images/camera.jpeg">
+        <figcaption>
+        Cameras<br>
+        available at 25% discount
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+
+    </div>
+
+<script>
+    var images = [
+    'Images/Banner.jpg', 
+    'Images/banner2.jpg', 
+    'Images/Banner3.jpg',
+    'Images/banner6.jpg',
+    'Images/Banner7.jpg',
+];
+
+var myVar = setInterval(next, 5000);
+
+var num = 0;
+function next() {
+    var slider = document.getElementById('slider');
+    num++;
+    if(num >= images.length) {
+        num = 0;
+    }
+    slider.src = images[num];
+}
+function prev() {
+    var slider = document.getElementById('slider');
+    num--;
+    if(num < 0) {
+        num = images.length-1;
+    }
+    slider.src = images[num];
+}
+
+function login()
+{
+  window.open("login.html");
+}
+</script>
+</body>
+</html>
